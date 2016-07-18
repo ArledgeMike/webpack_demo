@@ -30,6 +30,10 @@ module.exports = {
                 loader: ExtractTextPlugin.extract('style', 'css'),
                 include: PATHS.app
                 
+            },{
+                test: /\.scss$/,
+                loaders: ['style', 'css', 'sass'],
+                include: PATHS.style
             }
         ]
     }
